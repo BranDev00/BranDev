@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BranDev | Desarrollo web y soluciones digitales</title>
+<meta name="description" content="BranDev: desarrollo web, landing pages, interfaces y soluciones digitales a medida. Ideas que se convierten en productos digitales.">
+<meta property="og:title" content="BranDev | Desarrollo web y soluciones digitales">
+<meta property="og:description" content="Sitios web modernos, aplicaciones e interfaces a medida.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#07090a">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#inicio" class="logo" aria-label="BranDev, inicio"><img src="assets/logo.png" alt="BranDev" width="244" height="238"></a>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="#inicio" class="active">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#tecnologias">Tecnologías</a><a href="#contacto">Contacto</a>
+      <a href="#contacto" class="btn btn-line menu-cta">Contáctame</a>
+    </nav>
+    <div class="nav-r">
+      <button class="icon-btn" id="theme" aria-label="Cambiar tema"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg></button>
+      <a href="#contacto" class="btn btn-line nav-cta">Contáctame</a>
+      <button class="icon-btn burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="inicio">
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <p class="pill"><i></i>Desarrollo web · Soluciones digitales</p>
+      <h1>Ideas que se convierten en <em>soluciones digitales.</em></h1>
+      <p class="lead">En BranDev ayudo a negocios y personas a llevar sus ideas al mundo digital con sitios web modernos, aplicaciones y soluciones a medida.</p>
+      <div class="actions"><a href="#proyectos" class="btn btn-fill">Ver proyectos</a><a href="#sobre-mi" class="btn btn-line">Conocer más</a></div>
+      <ul class="facts"><li><b>Código limpio</b><span>Fácil de mantener</span></li><li><b>Responsive</b><span>Móvil, tablet y PC</span></li><li><b>Accesible</b><span>Y optimizado para SEO</span></li></ul>
+    </div>
+    <div class="hero-vis" aria-hidden="true">
+      <span class="note">Código<br>que da vida<br>a ideas</span>
+      <div class="laptop">
+        <div class="screen"><div class="tree"><span>src</span><span>components</span><span>pages</span><span>services</span><span>styles</span><span>app.jsx</span></div><pre id="code"></pre></div>
+        <div class="base"></div>
+      </div>
+      <ul class="stack"><li>React</li><li>JavaScript</li><li>Tailwind</li><li>Git &amp; GitHub</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="strip"><div class="wrap grid4" id="mini"></div></section>
+
+<section class="sec" id="sobre-mi">
+  <div class="wrap about">
+    <div><h2 class="h2">Sobre mí</h2>
+    <p class="lead">Hola, soy <strong>Brandon Sanchez</strong>, el desarrollador detrás de BranDev. Me dedico a convertir ideas en sitios web claros, rápidos y bien cuidados.</p>
+    <p class="muted">Creo que una buena página no solo se ve bien: explica lo que haces, es fácil de usar y le da confianza a quien la visita. Por eso trabajo de cerca contigo, entiendo tu objetivo y construyo una solución a tu medida, sin complicar lo que puede ser simple.</p>
+    <p class="muted">Si tienes una idea, aunque todavía esté a medias, cuéntamela y yo me encargo de darle forma.</p>
+    <div class="actions"><a href="#contacto" class="btn btn-fill">Hablemos</a></div></div>
+    <ul class="values">
+      <li><h3>Entender antes de construir</h3><p>Cada proyecto empieza por conocer el objetivo y a quién va dirigido.</p></li>
+      <li><h3>Simple y bien hecho</h3><p>Diseño limpio, código ordenado y sin efectos que no aporten valor.</p></li>
+      <li><h3>Pensado para crecer</h3><p>Estructuras que se pueden mantener y ampliar con el tiempo.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec alt" id="servicios">
+  <div class="wrap"><h2 class="h2">Servicios</h2><p class="muted sub">Lo que puedo construir para tu proyecto.</p>
+  <div class="grid4" id="services"></div></div>
+</section>
+
+<section class="sec" id="proyectos">
+  <div class="wrap">
+    <div class="head"><div><h2 class="h2">Proyectos destacados</h2><p class="muted sub" id="proj-sub">Cada proyecto refleja mi enfoque en diseño, funcionalidad y experiencia de usuario.</p></div>
+    <div class="filters" id="filters" role="group" aria-label="Filtrar proyectos"></div></div>
+    <div class="grid3" id="projects" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="sec alt" id="tecnologias">
+  <div class="wrap"><h2 class="h2">Tecnologías</h2><p class="muted sub">Herramientas que uso a diario.</p>
+  <ul class="techs" id="techs"></ul></div>
+</section>
+
+<section class="sec" id="contacto">
+  <div class="wrap cta">
+    <h2 class="h2">¿Tienes un proyecto en mente? Hagámoslo realidad juntos.</h2>
+    <p class="muted">Cuéntame tu idea y te respondo con una propuesta.</p>
+    <div class="actions"><a class="btn btn-fill" href="mailto:bransanchez0404@gmail.com">bransanchez0404@gmail.com</a><a class="btn btn-line" href="https://wa.me/573142675858" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn-line" href="https://github.com/BranDev00" target="_blank" rel="noopener">GitHub</a><a class="btn btn-line" href="https://www.linkedin.com/in/brandon-sanchez-986a2b3a0/" target="_blank" rel="noopener">LinkedIn</a></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap foot-in">
+  <div><a href="#inicio" class="logo" aria-label="BranDev, inicio"><img src="assets/logo.png" alt="BranDev" width="244" height="238"></a><p class="muted">Desarrollo web y soluciones digitales.</p></div>
+  <nav aria-label="Pie"><a href="#sobre-mi">Sobre mí</a><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav>
+  <p class="muted">© <span id="year"></span> BranDev</p>
+</div></footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
